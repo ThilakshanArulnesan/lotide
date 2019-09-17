@@ -20,7 +20,6 @@ const countLetters = function (str) {
   }
   return out;
 }
-
 //Test cases:
 const out = {
   l: 1,
@@ -34,6 +33,7 @@ const out = {
   e: 3,
   n: 1,
 };
+
 for (let lett in out) {
   assertEqual(countLetters("lighthouse in the house")[lett], out[lett]);
 }

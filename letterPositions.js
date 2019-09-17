@@ -1,5 +1,4 @@
 
-
 const assertArraysEqual = function (actual, expected) {
   if (!Array.isArray(actual) || !Array.isArray(expected)) {
     console.log("One of the arguments is not an array");
@@ -21,8 +20,44 @@ const eqArrays = function (arr1, arr2) {
   return true;
 };
 
+
+const letterPositions = function (sent) {
+  const out = {};
+  // logic to update results here
+  for (let i in sent) {
+
+    if (out[sent[i]]) { //is the letter already found or not?
+      out[sent[i]].push(Number(i));
+    } else {
+      out[sent[i]] = [];
+      out[sent[i]].push(Number(i));
+    }
+  }
+
+  return out;
+};
+
+
+
+
 //Test cases:
-assertArraysEqual([1, 2, 3], [1, 2, 3]); // => should PASS
-assertArraysEqual([1, 2, 3], [3, 2, 1]); // => should FAIL
-assertArraysEqual(["1", "2", "3"], ["1", "2", "3"]); // => should PASS
-assertArraysEqual(["1", "2", "3"], ["1", "2", 3]); // => should FAIL
+let expectedResult = {
+  l: [0],
+  i: [1, 11],
+  g: [2],
+  h: [3, 5, 15, 18],
+  t: [4, 14],
+  o: [6, 19],
+  u: [7, 20],
+  s: [8, 21],
+  e: [9, 16, 22],
+  n: [12]
+};
+
+
+for (let lett in expectedResult) {
+  assertArraysEqual(letterPositions("lighthouse in the house")[lett], expectedResult[lett]);
+}
+
+
+
