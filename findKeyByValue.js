@@ -21,7 +21,7 @@ const findKeyByValue = function (obj, key) {
 
 // Test Cases:
 const bestTVShowsByGenre = {
-  sci_fi: "The Expanse",
+  sciFi: "The Expanse",
   romance: "Brooklyn Nine-Nine",
   comedy: "Brooklyn Nine-Nine",
   thriller: "Brooklyn Nine-Nine",
