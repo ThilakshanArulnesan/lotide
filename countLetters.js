@@ -19,7 +19,7 @@ const countLetters = function (str) {
     }
   }
   return out;
-}
+};
 //Test cases:
 const out = {
   l: 1,

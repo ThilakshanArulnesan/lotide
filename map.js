@@ -36,8 +36,8 @@ console.log(results1);
 
 assertArraysEqual(map(words, word => word[0]), ["g", "c", "t", "m", "t"]);
 
-const numbers = [1, 1, 2, 3, 5, 7]
+const numbers = [1, 1, 2, 3, 5, 7];
 assertArraysEqual(map(numbers, number => number * 2), [2, 2, 4, 6, 10, 14]);
 
-const empty = []
+const empty = [];
 assertArraysEqual(map(empty, number => number * 2), []);

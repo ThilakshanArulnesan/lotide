@@ -39,7 +39,7 @@ const assertObjectsEqual = function (actual, expected) {
 
     console.log(`❗️❗️Assertion Failed ${inspect(actual)} !== ${inspect(expected)}❗️❗️`);
   }
-}
+};
 
 let ob1 = {
   a: "1",
