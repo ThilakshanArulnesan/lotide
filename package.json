@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@thilakshan.arulnesan/lotide",
   "version": "1.0.0",
-  "description": "Custom javascript library mimicking loads",
+  "description": "Custom javascript library mimicking lodash",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -19,7 +19,7 @@
     "type": "git",
     "url": "git+https://github.com/ThilakshanArulnesan/lotide.git"
   },
-  "author": "",
+  "author": "Thilakshan Arulnesan",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ThilakshanArulnesan/lotide/issues"
