@@ -1,4 +1,4 @@
-const assertArraysEqual = function (actual, expected) {
+const assertArraysEqual = function(actual, expected) {
   if (eqArrays(actual, expected)) {
     console.log(`✅✅Assertion Passed ${actual} === ${expected} ✅✅`);
   } else {
@@ -7,7 +7,7 @@ const assertArraysEqual = function (actual, expected) {
   }
 };
 
-const eqArrays = function (arr1, arr2) {
+const eqArrays = function(arr1, arr2) {
   if (arr1.length !== arr2.length) return false; //Check first to see if sizes are the same
 
   for (let i in arr1) {
@@ -17,7 +17,7 @@ const eqArrays = function (arr1, arr2) {
   return true;
 };
 
-const without = function (arr1, arr2) {
+const without = function(arr1, arr2) {
   let retArr = [];
   for (let e1 in arr1) {
     let blnFound = false;
