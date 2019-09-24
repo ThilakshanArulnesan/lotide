@@ -1,11 +1,9 @@
 // this file will be responsible for exporting our functions together as part of one 'lotide object'
 
-const head   = require('./head');
-const tail   = require('./tail');
+const head = require('./head');
+const tail = require('./tail');
 const middle = require('./middle');
 const assertEqual = require('./assertEqual');
-const assertArraysEqual = require('./assertArraysEqual');
-const assertObjectsEqual = require('./assertObjectsEqual');
 const countLetters = require('./countLetters');
 const countOnly = require('./countOnly');
 const eqArrays = require('./eqArrays');
@@ -23,8 +21,6 @@ module.exports = {
   tail,
   middle,
   assertEqual,
-  assertArraysEqual,
-  assertObjectsEqual,
   countLetters,
   countOnly,
   eqArrays,

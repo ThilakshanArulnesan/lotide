@@ -1,23 +1,7 @@
-const assertArraysEqual = function (actual, expected) {
-  if (eqArrays(actual, expected)) {
-    console.log(`✅✅Assertion Passed ${actual} === ${expected} ✅✅`);
-  } else {
+const assertArraysEqual = require(`./assertArraysEqual`);
+const eqArrays = require(`./eqArrays`);
 
-    console.log(`❗️❗️Assertion Failed ${actual} !== ${expected}❗️❗️`);
-  }
-};
-
-const eqArrays = function (arr1, arr2) {
-  if (arr1.length !== arr2.length) return false; //Check first to see if sizes are the same
-
-  for (let i in arr1) {
-    if (arr1[i] !== arr2[i]) return false;
-  }
-
-  return true;
-};
-
-const flatten = function (arr) {
+const flatten = function(arr) {
   let retArr = [];
   if (!Array.isArray(arr)) return retArr;
 
@@ -33,7 +17,4 @@ const flatten = function (arr) {
   return retArr;
 };
 
-assertArraysEqual(flatten([1, 2, 3, 4]), [1, 2, 3, 4]);
-assertArraysEqual(flatten([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6]);
-assertArraysEqual(flatten([1, [1, 1], ["a", "b", "c"]]), [1, 1, 1, "a", "b", "c"]);
-assertArraysEqual(flatten([[], 1, [1, 1], [], ["a", "b", "c"]]), [1, 1, 1, "a", "b", "c"]);
+module.exports = flatten;
